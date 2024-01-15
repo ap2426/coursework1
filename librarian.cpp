@@ -1,12 +1,13 @@
 #include "Librarian.h"
 
-// Constructors
-Librarian::Librarian(int id, const std::string& name, const std::string& address, const std::string& email, int salary)
-    : staffId(id), name(name), address(address), email(email), salary(salary) {}
 
-// Setters
-void Librarian::setStaffId(int id) {
-    staffId = id;
+
+Librarian::Librarian(int id, const std::string& name, const std::string& address, const std::string& email, int salary)
+    : id(id), name(name), address(address), email(email), salary(salary) {}
+
+
+void Librarian::setid(int id) {
+  this->id = id;
 }
 
 void Librarian::setName(const std::string& name) {
@@ -25,9 +26,9 @@ void Librarian::setSalary(int salary) {
     this->salary = salary;
 }
 
-// Getters
-int Librarian::getStaffId() const {
-    return staffId;
+
+int Librarian::getid() const {
+    return id;
 }
 
 std::string Librarian::getName() const {
